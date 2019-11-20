@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{507963F2-65D1-4499-B820-96AF092212C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eMonthleys.DAL</RootNamespace>
+    <AssemblyName>eMonthleys.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ads\AdsAdminDA.cs" />
+    <Compile Include="Ads\AdsBase.cs" />
+    <Compile Include="Ads\AdsDA.cs" />
+    <Compile Include="Ads\AdsAdminBase.cs" />
+    <Compile Include="Ads\iCustomerAds.cs" />
+    <Compile Include="Ads\iAdsAdmin.cs" />
+    <Compile Include="Billing\BillingAdsBase.cs" />
+    <Compile Include="Billing\BillingAdsDA.cs" />
+    <Compile Include="Billing\BillingVehicleBase.cs" />
+    <Compile Include="Billing\BillingVehilceDA.cs" />
+    <Compile Include="Billing\iBillingAds.cs" />
+    <Compile Include="Billing\iBillingVehicle.cs" />
+    <Compile Include="Customers\CustomerBase.cs" />
+    <Compile Include="Customers\CustomerDA.cs" />
+    <Compile Include="Customers\iProvince.cs" />
+    <Compile Include="Customers\iUserRole.cs" />
+    <Compile Include="Customers\ProvinceBase.cs" />
+    <Compile Include="Customers\ProvinceDA.cs" />
+    <Compile Include="Customers\UserRoleBase.cs" />
+    <Compile Include="Customers\UserRoleDA.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Customers\iCustomer.cs" />
+    <Compile Include="Financing\iFinancialDetails.cs" />
+    <Compile Include="Financing\FinanceBase.cs" />
+    <Compile Include="Financing\FinanceDA.cs" />
+    <Compile Include="Manufacturer\iMakeModelTrim.cs" />
+    <Compile Include="Manufacturer\iVehicleModelYear.cs" />
+    <Compile Include="Manufacturer\MakeModelTrimLookupBase.cs" />
+    <Compile Include="Manufacturer\MakeModelTrimDA.cs" />
+    <Compile Include="Manufacturer\VehicleModelYearBase.cs" />
+    <Compile Include="Manufacturer\VehicleModelYearDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Searching\iSearch.cs" />
+    <Compile Include="Searching\SearchBase.cs" />
+    <Compile Include="Searching\SearchDA.cs" />
+    <Compile Include="VehicleFeaturesLookup\FeaturesByVehicleBase.cs" />
+    <Compile Include="VehicleFeaturesLookup\FeaturesByVehicleDA.cs" />
+    <Compile Include="VehicleFeaturesLookup\iFeaturesByVehicle.cs" />
+    <Compile Include="VehicleFeaturesLookup\iVehiclefeaturelookup.cs" />
+    <Compile Include="Vehicles\iCustomerVehicleInfo.cs" />
+    <Compile Include="Vehicles\iVehiclecategories.cs" />
+    <Compile Include="Vehicles\iVehicleFeatures.cs" />
+    <Compile Include="Vehicles\iVehicleImage.cs" />
+    <Compile Include="Vehicles\VehiclecategoriesBase.cs" />
+    <Compile Include="Vehicles\VehiclecategoriesDA.cs" />
+    <Compile Include="VehicleFeaturesLookup\VehiclefeaturelookupBase.cs" />
+    <Compile Include="VehicleFeaturesLookup\VehiclefeaturelookupDA.cs" />
+    <Compile Include="Vehicles\VehicleFeaturesBase.cs" />
+    <Compile Include="Vehicles\VehicleFeaturesDA.cs" />
+    <Compile Include="Vehicles\VehicleImageBase.cs" />
+    <Compile Include="Vehicles\VehicleImageDA.cs" />
+    <Compile Include="Vehicles\CustomerVehicleInfoBase.cs" />
+    <Compile Include="Vehicles\CustomerVehicleInfoDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eMonthleys.Utils\eMonthleys.Utils.csproj">
+      <Project>{63c12a8f-0545-415b-abf1-1c8275c18c68}</Project>
+      <Name>eMonthleys.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

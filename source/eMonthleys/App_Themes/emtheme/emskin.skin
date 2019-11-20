@@ -1,0 +1,9 @@
+﻿<asp:RequiredFieldValidator runat="server" SkinId="valSkin" cssClass="err" />
+<asp:GridView runat="server" SkinId="gridviewSkin" CellPadding="4" cellspacing="1"  BackColor="#FFFFFF" GridLines="None">
+    <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+    <HeaderStyle CssClass="gvheader" />
+    <PagerStyle CssClass="gvrow" />
+    <RowStyle CssClass="gvrow" VerticalAlign="Top" />
+    <AlternatingRowStyle CssClass="gvaltrow" VerticalAlign="Top" />
+    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+</asp:GridView>

@@ -1,0 +1,26 @@
+Credential	API Signature
+Sandbox ID:APP-80W284485P519543T
+
+samskahn-facilitator@emonthlies.com
+API Username	samskahn-facilitator_api1.emonthlies.com
+API Password	1401671861
+Signature		AlI-Tircibtg7F7bVY90K8N5SSmKA6CeYXAOmINd1Ewi5iQRwDqP5y53
+Request Date	Jun 23, 2014 17:30:11 GMT-04:00
+
+
+
+Live App ID:APP-9J8240446J5773355
+
+API Username	samskahn_api1.emonthlies.com
+API Password	QF48N2DRFM3WKE7P
+Signature		A0tu85v7ObKa5NyGYKs3F37o9tSbALBPVs224.OtUy7mFSN1GpF3xCTs
+Request Date	Jun 23, 2014 17:30:11 GMT-04:00
+
+
+
+APP DETAILS
+App name :   emonthlies
+App display name :   emonthlies
+
+
+

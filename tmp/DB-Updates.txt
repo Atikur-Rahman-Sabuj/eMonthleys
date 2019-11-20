@@ -1,0 +1,6 @@
+UPDATE A
+  SET A.[adstatus] =  B.[approved]
+  FROM [emonthleysdb].[dbo].[financialdetails] A 
+	   INNER JOIN [emonthleysdb].[dbo].[customervehicleinfo] B
+	   ON A.[vehicleid] = B.[id]
+  WHERE B.[expires] > GETDATE()

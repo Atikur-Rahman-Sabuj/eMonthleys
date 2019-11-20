@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMonthleys.Web", "eMonthleys\eMonthleys.Web.csproj", "{7B904617-85DF-4B3D-BCE1-565018CF621B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMonthleys.DAL", "eMonthleys.DAL\eMonthleys.DAL.csproj", "{507963F2-65D1-4499-B820-96AF092212C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMonthleys.BLL", "eMonthleys.BLL\eMonthleys.BLL.csproj", "{94CB7CCF-FAD3-46EA-A74E-A8BE2DF09DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMonthleys.Utils", "eMonthleys.Utils\eMonthleys.Utils.csproj", "{63C12A8F-0545-415B-ABF1-1C8275C18C68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B904617-85DF-4B3D-BCE1-565018CF621B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B904617-85DF-4B3D-BCE1-565018CF621B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B904617-85DF-4B3D-BCE1-565018CF621B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B904617-85DF-4B3D-BCE1-565018CF621B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B904617-85DF-4B3D-BCE1-565018CF621B}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{7B904617-85DF-4B3D-BCE1-565018CF621B}.Test|Any CPU.Build.0 = Test|Any CPU
+		{507963F2-65D1-4499-B820-96AF092212C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507963F2-65D1-4499-B820-96AF092212C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507963F2-65D1-4499-B820-96AF092212C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507963F2-65D1-4499-B820-96AF092212C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507963F2-65D1-4499-B820-96AF092212C3}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{507963F2-65D1-4499-B820-96AF092212C3}.Test|Any CPU.Build.0 = Test|Any CPU
+		{94CB7CCF-FAD3-46EA-A74E-A8BE2DF09DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CB7CCF-FAD3-46EA-A74E-A8BE2DF09DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CB7CCF-FAD3-46EA-A74E-A8BE2DF09DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CB7CCF-FAD3-46EA-A74E-A8BE2DF09DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CB7CCF-FAD3-46EA-A74E-A8BE2DF09DD7}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{94CB7CCF-FAD3-46EA-A74E-A8BE2DF09DD7}.Test|Any CPU.Build.0 = Test|Any CPU
+		{63C12A8F-0545-415B-ABF1-1C8275C18C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C12A8F-0545-415B-ABF1-1C8275C18C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C12A8F-0545-415B-ABF1-1C8275C18C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C12A8F-0545-415B-ABF1-1C8275C18C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C12A8F-0545-415B-ABF1-1C8275C18C68}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{63C12A8F-0545-415B-ABF1-1C8275C18C68}.Test|Any CPU.Build.0 = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A7458E3-3DA7-450D-B716-D21D27249E39}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://nkgs.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = eMonthleys.BLL\\eMonthleys.BLL.csproj
+		SccProjectName1 = eMonthleys.BLL
+		SccLocalPath1 = eMonthleys.BLL
+		SccProjectUniqueName2 = eMonthleys.DAL\\eMonthleys.DAL.csproj
+		SccProjectName2 = eMonthleys.DAL
+		SccLocalPath2 = eMonthleys.DAL
+		SccProjectUniqueName3 = eMonthleys.Utils\\eMonthleys.Utils.csproj
+		SccProjectName3 = eMonthleys.Utils
+		SccLocalPath3 = eMonthleys.Utils
+		SccProjectUniqueName4 = eMonthleys\\eMonthleys.Web.csproj
+		SccProjectName4 = eMonthleys
+		SccLocalPath4 = eMonthleys
+		SccProjectUniqueName5 = DBConnEncryption\\DBConnEncryption.csproj
+		SccProjectName5 = DBConnEncryption
+		SccLocalPath5 = DBConnEncryption
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+Access Token Sandbox: access_token$sandbox$tmymyqxdk9ztkffp$ed5d4a1aeb6bc4a1bcc546778e8b7d9d
+
+
+
+
+
+apiSignature: 
+A68859pDcJKhpisZpaMkuQEJHzSPAamLXKRhPF
+
+P: 97GRXC2HSAXZYTRL
+
+
+samskahn_api1.emonthlies.com

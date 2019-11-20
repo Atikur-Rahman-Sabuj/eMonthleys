@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="eMonthleys.SiteMaster" %>
+
+<%@ Register Assembly="SessionTimeoutControl" Namespace="PAB.WebControls" TagPrefix="cc1" %>
+
+<%@ Import Namespace="System.Web.Configuration" %>
+<%@ Import Namespace="eMonthleys" %>
+
+<%@ Register Src="~/controls/topBanner.ascx" TagPrefix="uc1" TagName="topBanner" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" lang="en-ca" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="keywords" content="monthly payments, used vehicles, new vehicles, auto parts, Chrysler, GM, BMW, Mercedes, Hyundai, Nissan, Mazda, Honda, Toyota, Motor bikes, Motor cycles, Kia, Ford, Chevrolet, Fiat, Mini, Lexus, Acura, Infinity, Lincoln, VW, Volkswagen, Audi, Yamaha, Ducati, Suzuki, Subaru, Jeep, Datsun, Land Rover" />
+    <meta name="description" content="emonthlies helps you finding your next car within your budget." />
+    <meta name="author" content="Kami Baig - Advanced Network Technologies - http://www.ant-ca.com" />
+    <title>emonthlies - <%=Page.Title %>- The easy way to buy your next car</title>
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/responsiveslides.css" rel="stylesheet" />
+    <link href="/Content/footable.core.css" rel="stylesheet" />
+    <link href="/Content/jquery.smartmenus.bootstrap.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="/Content/Site.css" rel="stylesheet" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="/Scripts/moment.min.js"></script>
+    <script src="/Scripts/jquery-1.12.4.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootstrap-datetimepicker.min.js"></script>
+    <script src="/Scripts/footable.min.js"></script>
+    <script src="/Scripts/responsiveslides.min.js"></script>
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="/Scripts/jquery.smartmenus.min.js"></script>
+
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="/Scripts/jquery.smartmenus.bootstrap.min.js"></script>
+    <script src="/Scripts/respond.min.js"></script>
+    <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <cc1:SessionTimeoutControl ID="SessionTimeoutControl1" runat="server" RedirectUrl="~/account/login.aspx"></cc1:SessionTimeoutControl>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="Menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="white">Menu</span>
+                        <%--                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>--%>
+                    </button>
+                    <div id="logo">
+                        <a class="navbar-brand" runat="server" href="~/Default.aspx" title="the easy way to buy your next car" id="A1">
+                            <img src="/images/eMonthleys2.png" class="desktop" alt="the easy way to buy your next car" />
+                            <img src="/images/logo-mobile.png" class="mobile" alt="the easy way to buy your next car" />
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="~/Search.aspx" runat="server" id="A2">Search</a></li>
+                        <li><a href="#">Company</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="~/about.aspx" runat="server" id="A3">About</a></li>
+                                <li><a href="~/Contact.aspx" runat="server" id="A4">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="~/ads.aspx" runat="server" id="A5">Advertise With Us</a></li>
+                        <li><a href="~/sellitem.aspx" runat="server" id="A6">Sell Your Car or Item</a></li>
+
+                        <asp:LoginView runat="server" ViewStateMode="Enabled" ValidateRequestMode="Inherit">
+                            <AnonymousTemplate>
+                                <li><a href='<%=WebConfigurationManager.AppSettings["LoginUrl"] %>'>Sign In</a></li>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <li><a href="~/account/myaccount.aspx" runat="server" id="A8">Account</a></li>
+                                <%if (Session.Keys.Count > 0)
+                                    {
+                                        if (Session["Role"].ToString() == "admin")
+                                        {
+                                %>
+                                <li><a href='#'>Admin</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="~/admin/customers.aspx" runat="server" id="A10">Customers</a></li>
+                                        <li><a href="~/admin/vehicles.aspx" runat="server" id="A11">Vehicles</a></li>
+                                        <li><a href="~/admin/ads.aspx" runat="server" id="A12">Ads</a></li>
+                                    </ul>
+                                </li>
+                                <%
+                                        }
+                                    } %>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Sign out" LogoutPageUrl="~/default.aspx" />
+                                </li>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear10"></div>
+        <div class="container body-content">
+            <uc1:topBanner runat="server" ID="topBanner" />
+            <div class="clear25"></div>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="clear"></div>
+            <hr />
+            <footer>
+                <div>
+                    <div class="col-md-3">
+                        <p>&copy; <%: DateTime.Now.Year %> - emonthlies</p>
+                    </div>
+                    <div class="col-md-6">
+                        <nav>
+                            <a runat="server" href="~/Policy.aspx" id="b1">Policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+							<a runat="server" href="~/TermsOfUse.aspx" id="b2">Terms of Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+							<a runat="server" href="~/Account/Advertise.aspx" id="b3">Advertise With Us</a>
+                        </nav>
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <%--                                                <p>Powered by <a href="http://www.ant-ca.com">ANT</a></p>--%>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
