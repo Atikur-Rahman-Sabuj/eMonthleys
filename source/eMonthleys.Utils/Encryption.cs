@@ -24,7 +24,8 @@ namespace eMonthleys.Utils
 
         public static string Decrypt(string cipherText)
         {
-            return Encoding.Default.GetString(Transform(Convert.FromBase64String(cipherText), GetEncryptionEngine().CreateDecryptor()));
+            //return Encoding.Default.GetString(Transform(Convert.FromBase64String(cipherText), GetEncryptionEngine().CreateDecryptor()));
+            return "Data Source=TIRINGBRING-PC\\SQLEXPRESS;Initial Catalog=emonthleysdb;Integrated Security=True;MultipleActiveResultSets=True";
         }
 
         private static SymmetricAlgorithm GetEncryptionEngine()

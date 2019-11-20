@@ -84,7 +84,8 @@ namespace eMonthleys.BLL
         private static List<MakeLookup> GetMakeLookupListFromiMakeLookup(List<iMakeLookup> recordset, string ListType)
         {
             if (recordset == null)
-                return null;
+                //return null;
+                return new List<MakeLookup>();
             else
             {
                 List<MakeLookup> m = new List<MakeLookup>();

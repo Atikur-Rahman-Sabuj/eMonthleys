@@ -354,3 +354,4 @@ MigrationBackup/
 DataBase/emonthliesDb.sql
 *.png
 DataBase/emonthliesDb.sql
+source/eMonthleys/Web.config
