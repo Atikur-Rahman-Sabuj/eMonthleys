@@ -647,6 +647,10 @@
       <Project>{94cb7ccf-fad3-46ea-a74e-a8be2df09dd7}</Project>
       <Name>eMonthleys.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\eMonthleys.DAL\eMonthleys.DAL.csproj">
+      <Project>{507963f2-65d1-4499-b820-96af092212c3}</Project>
+      <Name>eMonthleys.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\eMonthleys.Utils\eMonthleys.Utils.csproj">
       <Project>{63c12a8f-0545-415b-abf1-1c8275c18c68}</Project>
       <Name>eMonthleys.Utils</Name>

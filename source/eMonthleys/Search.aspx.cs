@@ -4,6 +4,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using eMonthleys.Utils;
 using eMonthleys.BLL;
+using eMonthleys.DAL;
 
 namespace eMonthleys
 {
@@ -139,9 +140,15 @@ namespace eMonthleys
             //}
 
 
-            List<Search> CustomerVehicles = new List<Search>();
-            CustomerVehicles = Search.GetAllSearch(wp);
-            Session["SearchResults"] = CustomerVehicles;
+            //List<Search> CustomerVehicles = new List<Search>();
+            //CustomerVehicles = Search.GetAllSearch(wp);
+            //Session["SearchResults"] = CustomerVehicles;
+
+            List<iSearch> customerVehicles = new List<iSearch>();
+            customerVehicles = SearchBase.Instance.SelectAll(wp);
+            Session["SearchResults"] = customerVehicles;
+
+
             Response.Redirect("~/SearchResults.aspx");
         }
     }

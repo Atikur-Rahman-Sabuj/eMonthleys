@@ -286,6 +286,15 @@ namespace eMonthleys.BLL
             return s;
         }
 
+        public static Search GetOneSearch(iSearch record)
+        {
+            if(record == null)
+            {
+                return null;
+            }
+            return GetSearchValuesFromiSearch(record);
+        }
+       
         public static List<Search> SelectByVehicleId(int VehicleId, int FinId)
         {
             List<Search> s = GetSearchListFromiSearch(SearchBase.Instance.SelectByVehicleId(VehicleId, FinId));

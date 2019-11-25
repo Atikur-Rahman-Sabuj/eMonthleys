@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using eMonthleys.BLL;
+using eMonthleys.DAL;
 
 namespace eMonthleys
 {
@@ -11,15 +12,15 @@ namespace eMonthleys
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            fillGrid();
             if (Page.IsPostBack) return;
+            fillGrid();  
             FillYears(ddlYearLowerBound, 1965, 2045);
             FillYears(ddlYearUpperBound, 1965, 2050);
         }
 
         private void fillGrid()
         {
-            List<Search> searchresutls = (List<Search>)Session["SearchResults"];
+            List<iSearch> searchresutls = (List<iSearch>)Session["SearchResults"];
             gvResult.DataSource = searchresutls;
             gvResult.DataBind();
             if (searchresutls != null)
@@ -47,8 +48,12 @@ namespace eMonthleys
 
         protected string getVehicleData(object dr)
         {
-            var gvRow = (Search)dr;
+            var igvRow = (iSearch)dr;
 
+
+
+            //var gvRow = (Search)dr;
+            var gvRow = Search.GetOneSearch(igvRow);
             var imgs = VehicleImage.SelectByVehicleId(gvRow.VehicleId);
             string imgDiv = @"<div class='srimg border-grey'><div class='status'>";
             if (gvRow.VehicleCondition.Equals("used"))
@@ -207,6 +212,8 @@ namespace eMonthleys
         protected void gvResult_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             gvResult.PageIndex = e.NewPageIndex;
+            List<iSearch> searchresutls = (List<iSearch>)Session["SearchResults"];
+            gvResult.DataSource = searchresutls;
             gvResult.DataBind();
         }
 
