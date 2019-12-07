@@ -659,3 +659,44 @@ footer {
 .gridmenuicon {
     padding: 0 5px;
 }
+
+.share-links {
+    vertical-align: middle;
+}
+.share-links a {
+    background: #ffffff;
+    color: #555555;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    font-size: 14px text-indent: -9999em;
+    text-align: center;
+    width: 2.2857em;
+    height: 2.2857em;
+    display: inline-block;
+    margin: 0.2857em 0.5714em 0.2857em 0;
+    border-radius: 4px;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+    border:2px solid #000;
+    height:48px;
+    width:48px;
+    line-height:48px;
+    font-size:13px;
+    border-radius:50%;
+}
+
+
+
+
+.sa-social-link:hover {
+    background: transparent;
+    border: 2px solid #BB133E;
+}

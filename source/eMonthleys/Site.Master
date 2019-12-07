@@ -20,6 +20,7 @@
     <title>emonthlies - <%=Page.Title %>- The easy way to buy your next car</title>
     <script src="/Scripts/modernizr-2.8.3.js"></script>
     <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/Content/responsiveslides.css" rel="stylesheet" />
     <link href="/Content/footable.core.css" rel="stylesheet" />
     <link href="/Content/jquery.smartmenus.bootstrap.css" rel="stylesheet" />
@@ -38,6 +39,7 @@
     <!-- SmartMenus jQuery Bootstrap Addon -->
     <script type="text/javascript" src="/Scripts/jquery.smartmenus.bootstrap.min.js"></script>
     <script src="/Scripts/respond.min.js"></script>
+
     <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -114,6 +116,16 @@
             <div class="clear"></div>
             <hr />
             <footer>
+                <div class="col-sm-12">
+                    <div><strong>Find us on</strong></div>
+                        <div class="share-links">
+                            <a href="#" title="Facebook" class="sa-social-link" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="#" title="Twitter" class="sa-social-link"  target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="#" title="Linkedin" class="sa-social-link"  target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                </div>
+                <div class="clear"></div>
+                <hr />
                 <div>
                     <div class="col-md-3">
                         <p>&copy; <%: DateTime.Now.Year %> - emonthlies</p>
@@ -126,6 +138,7 @@
                         </nav>
                     </div>
                     <div class="col-md-3 text-right">
+                        
                         <%--                                                <p>Powered by <a href="http://www.ant-ca.com">ANT</a></p>--%>
                     </div>
                     <div class="clear"></div>
