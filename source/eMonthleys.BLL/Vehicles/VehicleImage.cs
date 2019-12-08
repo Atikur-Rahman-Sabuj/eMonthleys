@@ -18,6 +18,18 @@ namespace eMonthleys.BLL
         public string Img6 { get; set; }
         public string Img7 { get; set; }
         public string Img8 { get; set; }
+        public string Img9 { get; set; }
+        public string Img10 { get; set; }
+        public string Img11 { get; set; }
+        public string Img12 { get; set; }
+        public string Img13 { get; set; }
+        public string Img14 { get; set; }
+        public string Img15 { get; set; }
+        public string Img16 { get; set; }
+        public string Img17 { get; set; }
+        public string Img18 { get; set; }
+        public string Img19 { get; set; }
+        public string Img20 { get; set; }
         public string Video { get; set; }
         public string YouTubeLink { get; set; }
         public string VideoFormat { get; set; }
@@ -36,6 +48,18 @@ namespace eMonthleys.BLL
             string img6,
             string img7,
             string img8,
+            string img9,
+            string img10,
+            string img11,
+            string img12,
+            string img13,
+            string img14,
+            string img15,
+            string img16,
+            string img17,
+            string img18,
+            string img19,
+            string img20,
             string video,
             string youtube,
             string videoformat
@@ -52,6 +76,19 @@ namespace eMonthleys.BLL
             Img6 = img6;
             Img7 = img7;
             Img8 = img8;
+            Img9 = img9;
+            Img10 = img10;
+            Img11 = img11;
+            Img12 = img12;
+            Img12 = img12;
+            Img13 = img13;
+            Img14 = img14;
+            Img15 = img15;
+            Img16 = img16;
+            Img17 = img17;
+            Img18 = img18;
+            Img19 = img19;
+            Img20 = img20;
             Video = video;
             YouTubeLink = youtube;
             VideoFormat = videoformat;
@@ -78,6 +115,18 @@ namespace eMonthleys.BLL
                     record.Img6,
                     record.Img7,
                     record.Img8,
+                    record.Img9,
+                    record.Img10,
+                    record.Img11,
+                    record.Img12,
+                    record.Img13,
+                    record.Img14,
+                    record.Img15,
+                    record.Img16,
+                    record.Img17,
+                    record.Img18,
+                    record.Img19,
+                    record.Img20,
                     record.Video,
                     record.YouTubeLink,
                     record.VideoFormat
@@ -128,6 +177,18 @@ namespace eMonthleys.BLL
                 vi.Img6,
                 vi.Img7,
                 vi.Img8,
+                vi.Img9,
+                vi.Img10,
+                vi.Img11,
+                vi.Img12,
+                vi.Img13,
+                vi.Img14,
+                vi.Img15,
+                vi.Img16,
+                vi.Img17,
+                vi.Img18,
+                vi.Img19,
+                vi.Img20,
                 vi.Video,
                 vi.YouTubeLink,
                 vi.VideoFormat
@@ -149,6 +210,18 @@ namespace eMonthleys.BLL
                 vi.Img6,
                 vi.Img7,
                 vi.Img8,
+                vi.Img9,
+                vi.Img10,
+                vi.Img11,
+                vi.Img12,
+                vi.Img13,
+                vi.Img14,
+                vi.Img15,
+                vi.Img16,
+                vi.Img17,
+                vi.Img18,
+                vi.Img19,
+                vi.Img20,
                 vi.Video,
                 vi.YouTubeLink,
                 vi.VideoFormat

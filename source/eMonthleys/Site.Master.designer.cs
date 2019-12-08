@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace eMonthleys {
-    
-    
-    public partial class SiteMaster {
-        
+namespace eMonthleys
+{
+
+
+    public partial class SiteMaster
+    {
+
         /// <summary>
         /// HeaderContent control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder HeaderContent;
-        
+
         /// <summary>
         /// ScriptManager1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.ScriptManager ScriptManager1;
-        
+
         /// <summary>
         /// SessionTimeoutControl1 control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::PAB.WebControls.SessionTimeoutControl SessionTimeoutControl1;
-        
+
         /// <summary>
         /// A1 control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A1;
-        
+
         /// <summary>
         /// A2 control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A2;
-        
+
         /// <summary>
         /// A3 control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A3;
-        
+
         /// <summary>
         /// A4 control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A4;
-        
+
         /// <summary>
         /// A5 control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A5;
-        
+
         /// <summary>
         /// A6 control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A6;
-        
+
         /// <summary>
         /// topBanner control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::eMonthleys.topBanner topBanner;
-        
+
         /// <summary>
         /// MainContent control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
-        
+
         /// <summary>
         /// b1 control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor b1;
-        
+
         /// <summary>
         /// b2 control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace eMonthleys {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor b2;
-        
+
         /// <summary>
         /// b3 control.
         /// </summary>

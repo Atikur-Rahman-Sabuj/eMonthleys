@@ -27,6 +27,18 @@ namespace eMonthleys.DAL
                     ,[image6]
                     ,[image7]
                     ,[image8]
+                    ,[image9]
+                    ,[image10]
+                    ,[image11]
+                    ,[image12]
+                    ,[image13]
+                    ,[image14]
+                    ,[image15]
+                    ,[image16]
+                    ,[image17]
+                    ,[image18]
+                    ,[image19]
+                    ,[image20]
                     ,[video]
                     ,[youtubelink]
                     ,[videoformat])
@@ -41,6 +53,18 @@ namespace eMonthleys.DAL
                     ,@pImage6
                     ,@pImage7
                     ,@pImage8
+                    ,@pImage9
+                    ,@pImage10
+                    ,@pImage11
+                    ,@pImage12
+                    ,@pImage13
+                    ,@pImage14
+                    ,@pImage15
+                    ,@pImage16
+                    ,@pImage17
+                    ,@pImage18
+                    ,@pImage19
+                    ,@pImage20
                     ,@pVideo
                     ,@pYouTube
                     ,@pFormat)";
@@ -81,6 +105,59 @@ namespace eMonthleys.DAL
                     cmd.Parameters.Add("@pImage8", SqlDbType.VarChar).Value = vi.Img8;
                 else
                     cmd.Parameters.Add("@pImage8", SqlDbType.VarChar).Value = DBNull.Value;
+
+
+                if (vi.Img9 != null)
+                    cmd.Parameters.Add("@pImage9", SqlDbType.VarChar).Value = vi.Img9;
+                else
+                    cmd.Parameters.Add("@pImage9", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img10 != null)
+                    cmd.Parameters.Add("@pImage10", SqlDbType.VarChar).Value = vi.Img10;
+                else
+                    cmd.Parameters.Add("@pImage10", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img11 != null)
+                    cmd.Parameters.Add("@pImage11", SqlDbType.VarChar).Value = vi.Img11;
+                else
+                    cmd.Parameters.Add("@pImage11", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img12 != null)
+                    cmd.Parameters.Add("@pImage12", SqlDbType.VarChar).Value = vi.Img12;
+                else
+                    cmd.Parameters.Add("@pImage12", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img13 != null)
+                    cmd.Parameters.Add("@pImage13", SqlDbType.VarChar).Value = vi.Img13;
+                else
+                    cmd.Parameters.Add("@pImage13", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img14 != null)
+                    cmd.Parameters.Add("@pImage14", SqlDbType.VarChar).Value = vi.Img14;
+                else
+                    cmd.Parameters.Add("@pImage14", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img15 != null)
+                    cmd.Parameters.Add("@pImage15", SqlDbType.VarChar).Value = vi.Img15;
+                else
+                    cmd.Parameters.Add("@pImage15", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img16 != null)
+                    cmd.Parameters.Add("@pImage16", SqlDbType.VarChar).Value = vi.Img16;
+                else
+                    cmd.Parameters.Add("@pImage16", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img17 != null)
+                    cmd.Parameters.Add("@pImage17", SqlDbType.VarChar).Value = vi.Img17;
+                else
+                    cmd.Parameters.Add("@pImage17", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img18 != null)
+                    cmd.Parameters.Add("@pImage18", SqlDbType.VarChar).Value = vi.Img18;
+                else
+                    cmd.Parameters.Add("@pImage18", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img19 != null)
+                    cmd.Parameters.Add("@pImage19", SqlDbType.VarChar).Value = vi.Img19;
+                else
+                    cmd.Parameters.Add("@pImage19", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img20 != null)
+                    cmd.Parameters.Add("@pImage20", SqlDbType.VarChar).Value = vi.Img20;
+                else
+                    cmd.Parameters.Add("@pImage20", SqlDbType.VarChar).Value = DBNull.Value;
+
+
+
                 if (vi.Video != null)
                     cmd.Parameters.Add("@pVideo", SqlDbType.VarChar).Value = vi.Video;
                 else
@@ -125,6 +202,18 @@ namespace eMonthleys.DAL
                           ,[image6] = @pImage6
                           ,[image7] = @pImage7
                           ,[image8] = @pImage8
+                          ,[image9] = @pImage9
+                          ,[image10] = @pImage10
+                          ,[image11] = @pImage11
+                          ,[image12] = @pImage12
+                          ,[image13] = @pImage13
+                          ,[image14] = @pImage14
+                          ,[image15] = @pImage15
+                          ,[image16] = @pImage16
+                          ,[image17] = @pImage17
+                          ,[image18] = @pImage18
+                          ,[image19] = @pImage19
+                          ,[image20] = @pImage20
                           ,[video] = @pVideo
                           ,[youtubelink] = @pYouTube
                           ,[videoformat] = @pFormat
@@ -167,6 +256,60 @@ namespace eMonthleys.DAL
                     cmd.Parameters.Add("@pImage8", SqlDbType.VarChar).Value = vi.Img8;
                 else
                     cmd.Parameters.Add("@pImage8", SqlDbType.VarChar).Value = DBNull.Value;
+
+
+
+                if (vi.Img9 != null)
+                    cmd.Parameters.Add("@pImage9", SqlDbType.VarChar).Value = vi.Img9;
+                else
+                    cmd.Parameters.Add("@pImage9", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img10 != null)
+                    cmd.Parameters.Add("@pImage10", SqlDbType.VarChar).Value = vi.Img10;
+                else
+                    cmd.Parameters.Add("@pImage10", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img11 != null)
+                    cmd.Parameters.Add("@pImage11", SqlDbType.VarChar).Value = vi.Img11;
+                else
+                    cmd.Parameters.Add("@pImage11", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img12 != null)
+                    cmd.Parameters.Add("@pImage12", SqlDbType.VarChar).Value = vi.Img12;
+                else
+                    cmd.Parameters.Add("@pImage12", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img13 != null)
+                    cmd.Parameters.Add("@pImage13", SqlDbType.VarChar).Value = vi.Img13;
+                else
+                    cmd.Parameters.Add("@pImage13", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img14 != null)
+                    cmd.Parameters.Add("@pImage14", SqlDbType.VarChar).Value = vi.Img14;
+                else
+                    cmd.Parameters.Add("@pImage14", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img15 != null)
+                    cmd.Parameters.Add("@pImage15", SqlDbType.VarChar).Value = vi.Img15;
+                else
+                    cmd.Parameters.Add("@pImage15", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img16 != null)
+                    cmd.Parameters.Add("@pImage16", SqlDbType.VarChar).Value = vi.Img16;
+                else
+                    cmd.Parameters.Add("@pImage16", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img17 != null)
+                    cmd.Parameters.Add("@pImage17", SqlDbType.VarChar).Value = vi.Img17;
+                else
+                    cmd.Parameters.Add("@pImage17", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img18 != null)
+                    cmd.Parameters.Add("@pImage18", SqlDbType.VarChar).Value = vi.Img18;
+                else
+                    cmd.Parameters.Add("@pImage18", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img19 != null)
+                    cmd.Parameters.Add("@pImage19", SqlDbType.VarChar).Value = vi.Img19;
+                else
+                    cmd.Parameters.Add("@pImage19", SqlDbType.VarChar).Value = DBNull.Value;
+                if (vi.Img20 != null)
+                    cmd.Parameters.Add("@pImage20", SqlDbType.VarChar).Value = vi.Img20;
+                else
+                    cmd.Parameters.Add("@pImage20", SqlDbType.VarChar).Value = DBNull.Value;
+
+
+
                 if (vi.Video != null)
                     cmd.Parameters.Add("@pVideo", SqlDbType.VarChar).Value = vi.Video;
                 else
@@ -239,6 +382,18 @@ namespace eMonthleys.DAL
                             ,[image6]
                             ,[image7]
                             ,[image8]
+                            ,[image9]
+                            ,[image10]
+                            ,[image11]
+                            ,[image12]
+                            ,[image13]
+                            ,[image14]
+                            ,[image15]
+                            ,[image16]
+                            ,[image17]
+                            ,[image18]
+                            ,[image19]
+                            ,[image20]
                             ,[video]
                             ,[youtubelink]
                             ,[videoformat]
@@ -282,6 +437,18 @@ namespace eMonthleys.DAL
                             ,[image6]
                             ,[image7]
                             ,[image8]
+                            ,[image9]
+                            ,[image10]
+                            ,[image11]
+                            ,[image12]
+                            ,[image13]
+                            ,[image14]
+                            ,[image15]
+                            ,[image16]
+                            ,[image17]
+                            ,[image18]
+                            ,[image19]
+                            ,[image20]
                             ,[video]
                             ,[youtubelink]
                             ,[videoformat]

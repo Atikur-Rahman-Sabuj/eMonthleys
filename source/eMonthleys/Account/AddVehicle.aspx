@@ -920,6 +920,88 @@
                                     <asp:FileUpload ID="FileUpload8" runat="server" Width="95%" />
                                 </div>
                             </div>
+
+
+                            <div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="lblImage9" runat="server" AssociatedControlID="FileUpload10" CssClass="col-md-3 control-label">Image 9:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload10" runat="server" Width="95%" />
+                                </div>
+                            </div>
+
+                            <div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label3" runat="server" AssociatedControlID="FileUpload11" CssClass="col-md-3 control-label">Image 10:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload11" runat="server" Width="95%" />
+                                </div>
+                            </div>
+                            <div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label14" runat="server" AssociatedControlID="FileUpload12" CssClass="col-md-3 control-label">Image 11:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload12" runat="server" Width="95%" />
+                                </div>
+                            </div>
+                            <div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label29" runat="server" AssociatedControlID="FileUpload13" CssClass="col-md-3 control-label">Image 12:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload13" runat="server" Width="95%" />
+                                </div>
+                            </div><div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label30" runat="server" AssociatedControlID="FileUpload14" CssClass="col-md-3 control-label">Image 13:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload14" runat="server" Width="95%" />
+                                </div>
+                            </div><div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label31" runat="server" AssociatedControlID="FileUpload15" CssClass="col-md-3 control-label">Image 14:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload15" runat="server" Width="95%" />
+                                </div>
+                            </div><div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label32" runat="server" AssociatedControlID="FileUpload16" CssClass="col-md-3 control-label">Image 15:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload16" runat="server" Width="95%" />
+                                </div>
+                            </div><div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label33" runat="server" AssociatedControlID="FileUpload17" CssClass="col-md-3 control-label">Image 16:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload17" runat="server" Width="95%" />
+                                </div>
+                            </div><div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label34" runat="server" AssociatedControlID="FileUpload18" CssClass="col-md-3 control-label">Image 17:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload18" runat="server" Width="95%" />
+                                </div>
+                            </div><div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label35" runat="server" AssociatedControlID="FileUpload19" CssClass="col-md-3 control-label">Image 18:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload19" runat="server" Width="95%" />
+                                </div>
+                            </div><div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label36" runat="server" AssociatedControlID="FileUpload20" CssClass="col-md-3 control-label">Image 19:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload20" runat="server" Width="95%" />
+                                </div>
+                            </div><div class="clear5"></div>
+                            <div class="form-group">
+                                <asp:Label ID="Label37" runat="server" AssociatedControlID="FileUpload21" CssClass="col-md-3 control-label">Image 20:</asp:Label>
+                                <div class="col-md-9">
+                                    <asp:FileUpload ID="FileUpload21" runat="server" Width="95%" />
+                                </div>
+                            </div>
+
+
+
                             <div class="clear5"></div>
                             <div class="form-group">
                                 <asp:Label ID="lblVideo" runat="server" CssClass="col-md-3 control-label">Video file:</asp:Label>

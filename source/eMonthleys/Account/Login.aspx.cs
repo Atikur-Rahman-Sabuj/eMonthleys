@@ -35,10 +35,11 @@ namespace eMonthleys
                     Session["UserName"] = c.FirstName;
                     Session["CustomerType"] = c.CustomerType;
                     Session["Role"] = c.UserType;
-                    //FormsAuthentication.Initialize();
+                    FormsAuthentication.Initialize();
                     FormsAuthentication.SetAuthCookie(c.Email, false);
-                    //CreateAuthTicket(txtUserId.Text.ToLower(), c.UserType);
+                    CreateAuthTicket(txtUserId.Text.ToLower(), c.UserType);
                     Response.Redirect("~/account/myaccount.aspx?CustomerId=" + c.Id);
+                    //Response.Redirect("~/thanks.aspx");
                 }
             }
         }

@@ -594,6 +594,34 @@ namespace eMonthleys
                 imgs.Img7 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload7.PostedFile.FileName)); ;
             if (FileUpload8.HasFile)
                 imgs.Img8 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload8.PostedFile.FileName)); ;
+
+            if (FileUpload10.HasFile)
+                imgs.Img9 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload10.PostedFile.FileName)); ;
+            if (FileUpload11.HasFile)
+                imgs.Img10 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload11.PostedFile.FileName)); ;
+            if (FileUpload12.HasFile)
+                imgs.Img11 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload12.PostedFile.FileName)); ;
+            if (FileUpload13.HasFile)
+                imgs.Img12 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload13.PostedFile.FileName)); ;
+            if (FileUpload14.HasFile)
+                imgs.Img13 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload14.PostedFile.FileName)); ;
+            if (FileUpload15.HasFile)
+                imgs.Img14 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload15.PostedFile.FileName)); ;
+            if (FileUpload16.HasFile)
+                imgs.Img15 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload16.PostedFile.FileName)); ;
+            if (FileUpload17.HasFile)
+                imgs.Img16 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload17.PostedFile.FileName)); ;
+            if (FileUpload18.HasFile)
+                imgs.Img17 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload18.PostedFile.FileName)); ;
+            if (FileUpload19.HasFile)
+                imgs.Img18 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload19.PostedFile.FileName)); ;
+            if (FileUpload20.HasFile)
+                imgs.Img19 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload20.PostedFile.FileName)); ;
+            if (FileUpload21.HasFile)
+                imgs.Img20 = @"/imgs/" + imgs.ImgPath + "/" + Helpers.RemoveInvalidChars(Path.GetFileName(FileUpload21.PostedFile.FileName)); ;
+
+
+
             switch (ddlVideoSource.SelectedIndex)
             {
                 case 1:
@@ -658,7 +686,7 @@ namespace eMonthleys
             string[] allowedExtension = { ".jpeg", ".jpg", ".png", ".gif" };
             string[] videoExtensions = { ".avi", ".mov", ".wmv", ".mp4", ".mpg" };
             HttpFileCollection files = Request.Files;
-            int videoIndex = 8;
+            int videoIndex = 20;
             string rc = string.Empty;
 
             if (files.Count > 0)

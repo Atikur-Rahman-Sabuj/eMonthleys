@@ -24,10 +24,14 @@ namespace eMonthleys.Utils
 
         public static string Decrypt(string cipherText)
         {
-            //String value = Encoding.Default.GetString(Transform(Convert.FromBase64String(cipherText), GetEncryptionEngine().CreateDecryptor()));
-            //return value;
+            if (cipherText.Equals("MDaGLSRuXmY82OFMuyBqTCdFD/W40DKOuHPGCCp2+BkTY8uFGQ2ektTqAEjuCbLkolWGQMrqI0uKP63wEEqR2ANCaf7Ey72f/w7zf1i8dhc="))
+            {
+                return "Data Source=TIRINGBRING-PC\\SQLEXPRESS;Initial Catalog=emonthleysdb;Integrated Security=True;MultipleActiveResultSets=True";
+            }
+            String value = Encoding.Default.GetString(Transform(Convert.FromBase64String(cipherText), GetEncryptionEngine().CreateDecryptor()));
+            return value;
             //return Encoding.Default.GetString(Transform(Convert.FromBase64String(cipherText), GetEncryptionEngine().CreateDecryptor()));
-            return "Data Source=TIRINGBRING-PC\\SQLEXPRESS;Initial Catalog=emonthleysdb;Integrated Security=True;MultipleActiveResultSets=True";
+            //return "Data Source=TIRINGBRING-PC\\SQLEXPRESS;Initial Catalog=emonthleysdb;Integrated Security=True;MultipleActiveResultSets=True";
             //return "Data Source=VPLANETWEB1\\SQLEXPRESS;Initial Catalog=emonthleysdb;Uid=emsk;Pwd=S@mad2014;MultipleActiveResultSets=True";
         }
 
