@@ -78,8 +78,8 @@
             <article class="col-md-6 mainpanel">
                 <h2>Advertise With Us</h2>
                 <p>
-                    Large ads appear as rotating banners in the top section of the website for $199.00.<br />
-                    Small ads appear rotating on either left or right side of the page for $99.00.<br />
+                    Large ads appear as rotating banners in the top section of the website for $599.00.<br />
+                    Small ads appear rotating on either left or right side of the page for $299.00.<br />
                     All ads are randomly picked to accomodate volume.
                 </p>
                 <div class="alert alert-info">

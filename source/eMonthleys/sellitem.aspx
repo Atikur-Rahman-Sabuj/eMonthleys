@@ -80,11 +80,11 @@
                 <div class="pricing bold white">
                     <h3 class="white">Ad pricing</h3>
                     <p>Private Ads are free</p>
-                    <p>$9.99 including tax for 3 months (Business)</p>
+                    <p>$19.99 including tax for 1 months (Business)</p>
                     <p></p>
                 </div>
                 <p>
-                    You can upload upto eight pictures for your vehicle.<br />
+                    You can upload upto twenty pictures for your vehicle.<br />
                     If you have a link to a YouTube video for the vehicle, you may enter the YouTube link instead of uploading a video.
                 </p>
                 <p>

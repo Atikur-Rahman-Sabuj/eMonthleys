@@ -41,11 +41,11 @@ namespace eMonthleys
                             {
                                 case "L":
                                     lblItem.Text = "Large Ad (rotating banner)";
-                                    txtPayment.Text = "199.00";
+                                    txtPayment.Text = "599.00";
                                     break;
                                 case "S":
                                     lblItem.Text = "Small Ad (rotating images)";
-                                    txtPayment.Text = "99.00";
+                                    txtPayment.Text = "299.00";
                                     break;
                             }
                             break;
@@ -58,7 +58,7 @@ namespace eMonthleys
                                     switch (Request.QueryString["adtype"])
                                     {
                                         case "Business":
-                                            txtPayment.Text = "9.99";
+                                            txtPayment.Text = "19.99";
                                             break;
                                         case "Private":
                                             txtPayment.Text = "0.99";
@@ -67,11 +67,11 @@ namespace eMonthleys
                                     break;
                                 case "8":
                                     lblItem.Text = "8 vehicles";
-                                    txtPayment.Text = "49.99";
+                                    txtPayment.Text = "89.99";
                                     break;
                                 case "20":
                                     lblItem.Text = "20 vehicles";
-                                    txtPayment.Text = "99.99";
+                                    txtPayment.Text = "199.99";
                                     break;
                             }
                             break;
@@ -153,11 +153,11 @@ namespace eMonthleys
                     {
                         case "L":
                             Session["AdType"] = "Business Ad Large";
-                            GetPaid("ad", "Large Ad (rotating banner)", "199", creditCard);
+                            GetPaid("ad", "Large Ad (rotating banner)", "599", creditCard);
                             break;
                         case "S":
                             Session["AdType"] = "Business Ad Small";
-                            GetPaid("ad", "Small Ad (rotating images)", "99", creditCard);
+                            GetPaid("ad", "Small Ad (rotating images)", "299", creditCard);
                             break;
                     }
                     break;
@@ -167,7 +167,7 @@ namespace eMonthleys
                     {
                         case "Business":
                             Session["AdType"] = "Dealership item sales ad";
-                            amount = "9.99";
+                            amount = "19.99";
                             break;
                         case "Private":
                             Session["AdType"] = "Private item sales ad";
@@ -180,10 +180,10 @@ namespace eMonthleys
                             GetPaid("car", "1 vehicle", amount, creditCard);
                             break;
                         case "8":
-                            GetPaid("car", "8 vehicles", "49.99", creditCard);
+                            GetPaid("car", "8 vehicles", "89.99", creditCard);
                             break;
                         case "20":
-                            GetPaid("car", "20 vehicles", "99.99", creditCard);
+                            GetPaid("car", "20 vehicles", "199.99", creditCard);
                             break;
                     }
                     break;
@@ -310,7 +310,7 @@ namespace eMonthleys
                 msg.Append("<p>This ad is a free promotional ad.</p>");
             if (item == "car")
             {
-                msg.Append("<p>This posting is valid for 90 days and will automatically discontinue. ");
+                msg.Append("<p>This posting is valid for 30 days and will automatically discontinue. ");
             }
             else
             {

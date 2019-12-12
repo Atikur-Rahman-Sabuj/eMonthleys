@@ -67,8 +67,8 @@
                     <asp:Label ID="Label1" runat="server" AssociatedControlID="rblAdFormat" CssClass="col-md-2 control-label">Ad type</asp:Label>
                     <div class="col-md-10">
                         <asp:RadioButtonList ID="rblAdFormat" runat="server" RepeatColumns="2" RepeatDirection="Horizontal" Width="450px" ValidationGroup="vgAd">
-                            <asp:ListItem Value="S">Small - $99.00</asp:ListItem>
-                            <asp:ListItem Value="L">Large - $199.00</asp:ListItem>
+                            <asp:ListItem Value="S">Small - $199.00</asp:ListItem>
+                            <asp:ListItem Value="L">Large - $599.00</asp:ListItem>
                         </asp:RadioButtonList>
                     </div>
                     <asp:RequiredFieldValidator ID="rfvAdType" runat="server" ValidationGroup="vgAd" ControlToValidate="rblAdFormat"

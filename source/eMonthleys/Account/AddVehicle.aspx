@@ -74,7 +74,7 @@
         <div class="pricing bold white">
             <h3 class="white">Ad pricing</h3>
             <p>Private ads are free</p>
-            <p>$9.99 including tax for 3 months (Business)</p>
+            <p>$19.99 including tax for 1 months (Business)</p>
             <p></p>
         </div>
         <asp:Literal ID="ltlRemaining" runat="server"></asp:Literal>
@@ -1050,9 +1050,9 @@
                             if (c.CustomerType == "Business")
                             { %>
                         <asp:RadioButtonList ID="rblPricing" runat="server" ValidationGroup="vgCheckOut">
-                            <asp:ListItem Value="1">1 Vehicle - $9.99</asp:ListItem>
-                            <asp:ListItem Value="8">8 Vehicles - $49.99</asp:ListItem>
-                            <asp:ListItem Value="20">20 Vehicles - $99.99</asp:ListItem>
+                            <asp:ListItem Value="1">1 Vehicle - $19.99</asp:ListItem>
+                            <asp:ListItem Value="8">8 Vehicles - $89.99</asp:ListItem>
+                            <asp:ListItem Value="20">20 Vehicles - $199.99</asp:ListItem>
                         </asp:RadioButtonList>
                         <asp:RequiredFieldValidator ID="rfvBusiness" runat="server" ErrorMessage="Please select a plan."
                             ControlToValidate="rblPricing" ValidationGroup="vgCheckOut" CssClass="text-danger">*</asp:RequiredFieldValidator>
