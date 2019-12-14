@@ -92,6 +92,7 @@
                                         <li><a href="~/admin/customers.aspx" runat="server" id="A10">Customers</a></li>
                                         <li><a href="~/admin/vehicles.aspx" runat="server" id="A11">Vehicles</a></li>
                                         <li><a href="~/admin/ads.aspx" runat="server" id="A12">Ads</a></li>
+                                        <li><a href="~/admin/coverpicture.aspx" runat="server" id="A7">Cover picture</a></li>
                                     </ul>
                                 </li>
                                 <%

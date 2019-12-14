@@ -85,7 +85,8 @@ input[type="password"] {
 .splash {
     width: 100%;
     margin: auto;
-    background-image: url('/images/3sportscars.png');
+    /*background-image: url('/images/3sportscars.png');*/
+    background-image: url('/images/cover/image.png');
     background-position: top;
     background-repeat: no-repeat;
     background-color: transparent;

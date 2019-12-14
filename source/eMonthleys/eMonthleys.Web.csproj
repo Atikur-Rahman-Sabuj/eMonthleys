@@ -132,6 +132,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\viewmycarad.aspx" />
     <Content Include="admin\Ads.aspx" />
+    <Content Include="admin\coverpicture.aspx" />
     <Content Include="admin\NewCustomer.aspx" />
     <Content Include="admin\ReviewVehicle.aspx" />
     <Content Include="admin\Vehicles.aspx" />
@@ -162,6 +163,8 @@
     <Content Include="images\CarGrey-icon.png" />
     <Content Include="images\collector-icon.png" />
     <Content Include="images\collector.png" />
+    <Content Include="images\cover\image..jpg" />
+    <Content Include="images\cover\image..png" />
     <Content Include="images\Deny.png" />
     <Content Include="images\fancybox_buttons.png" />
     <Content Include="images\fancybox_loading%402x.gif" />
@@ -452,6 +455,13 @@
     </Compile>
     <Compile Include="admin\Ads.aspx.designer.cs">
       <DependentUpon>Ads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\coverpicture.aspx.cs">
+      <DependentUpon>coverpicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\coverpicture.aspx.designer.cs">
+      <DependentUpon>coverpicture.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\NewCustomer.aspx.cs">
       <DependentUpon>NewCustomer.aspx</DependentUpon>
