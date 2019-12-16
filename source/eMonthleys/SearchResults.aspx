@@ -508,13 +508,16 @@
 
             <asp:Panel ID="pnlFineResults" runat="server" Enabled="false" Visible="false" CssClass="pad10">
                 <%
-                    var nsearchresutls = (List<eMonthleys.DAL.iSearch>)Session["SearchResults"];
-                    var searchresutls = new List<eMonthleys.BLL.Search>();
-                    searchresutls = nsearchresutls.Select(item =>
-                    {
-                       return eMonthleys.BLL.Search.GetOneSearch(item);
-                    }).ToList();
+                    //ToDo: Sabuj: Use this code if uning improved speed code
+                    //var nsearchresutls = (List<eMonthleys.DAL.iSearch>)Session["SearchResults"];
+                    //var searchresutls = new List<eMonthleys.BLL.Search>();
+                    //searchresutls = nsearchresutls.Select(item =>
+                    //{
+                    //   return eMonthleys.BLL.Search.GetOneSearch(item);
+                    //}).ToList();
 
+
+                    var searchresutls = (List<eMonthleys.BLL.Search>)Session["SearchResults"];
                     string[] lf = new string[] { "f", "l", "c" };
                     if (searchresutls != null)
                     {

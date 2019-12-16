@@ -20,7 +20,9 @@ namespace eMonthleys
 
         private void fillGrid()
         {
-            List<iSearch> searchresutls = (List<iSearch>)Session["SearchResults"];
+            List<Search> searchresutls = (List<Search>)Session["SearchResults"];
+            //ToDo: Sabuj: Use this code if uning improved speed code
+            //List<iSearch> searchresutls = (List<iSearch>)Session["SearchResults"];
             gvResult.DataSource = searchresutls;
             gvResult.DataBind();
             if (searchresutls != null)
@@ -48,12 +50,13 @@ namespace eMonthleys
 
         protected string getVehicleData(object dr)
         {
-            var igvRow = (iSearch)dr;
+            //ToDo: Sabuj: Use this code if uning improved speed code
+            //var igvRow = (iSearch)dr;
+            //var gvRow = Search.GetOneSearch(igvRow);
 
 
-
-            //var gvRow = (Search)dr;
-            var gvRow = Search.GetOneSearch(igvRow);
+            var gvRow = (Search)dr;
+            
             var imgs = VehicleImage.SelectByVehicleId(gvRow.VehicleId);
             string imgDiv = @"<div class='srimg border-grey'><div class='status'>";
             if (gvRow.VehicleCondition.Equals("used"))
@@ -211,9 +214,14 @@ namespace eMonthleys
 
         protected void gvResult_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            gvResult.PageIndex = e.NewPageIndex;
-            List<iSearch> searchresutls = (List<iSearch>)Session["SearchResults"];
+            //ToDo: Sabuj: Use this code if uning improved speed code
+            //gvResult.PageIndex = e.NewPageIndex;
+            //List<iSearch> searchresutls = (List<iSearch>)Session["SearchResults"];
+            //gvResult.DataSource = searchresutls;
+            //gvResult.DataBind();
+            List<Search> searchresutls = (List<Search>)Session["SearchResults"];
             gvResult.DataSource = searchresutls;
+            gvResult.PageIndex = e.NewPageIndex;
             gvResult.DataBind();
         }
 

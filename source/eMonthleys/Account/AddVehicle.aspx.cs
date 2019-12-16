@@ -78,7 +78,7 @@ namespace eMonthleys
             {
                 string[] cYears = { DateTime.Now.Year.ToString(), (DateTime.Now.Year + 1).ToString() };
                 CustomerVehicleInfo vi = new CustomerVehicleInfo();
-                DateTime AdExpiry = new DateTime(DateTime.Now.Year, 12, 31);
+                DateTime AdExpiry = DateTime.Now.AddMonths(1); //new DateTime(DateTime.Now.Month==12?DateTime.Now.Year+1:DateTime.Now.Year, DateTime.Now.Month==12?1:DateTime.Now.Month+1, DateTime.Now.Day);
                 vi.Id = 0;
                 vi.Seller = Usr.Id;
                 vi.VehicleCondition = rblCondition.SelectedValue;
@@ -438,14 +438,14 @@ namespace eMonthleys
                     switch (rblPricing.SelectedValue)
                     {
                         case "1":
-                            vb.Payment = 9.99;
+                            vb.Payment = 19.99;
                             break;
                         case "8":
-                            vb.Payment = 49.99;
+                            vb.Payment = 89.99;
                             vb.AdsRemaining = 7;
                             break;
                         case "20":
-                            vb.Payment = 99.99;
+                            vb.Payment = 199.99;
                             vb.AdsRemaining = 19;
                             break;
                     }

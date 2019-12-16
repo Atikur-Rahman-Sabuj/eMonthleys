@@ -133,9 +133,9 @@ namespace eMonthleys
                 if (err == string.Empty)
                     if (Session["Role"].ToString() == "admin")
                     {
-                        double amnt = 99;
+                        double amnt = 299;
                         if (rblAdFormat.SelectedValue == "L")
-                            amnt = 199;
+                            amnt = 599;
                         UpdateAdBillingAdmin(amnt);
                         Response.Redirect("~/admin/ads.aspx");
                     }

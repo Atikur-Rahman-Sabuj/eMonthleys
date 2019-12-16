@@ -139,14 +139,16 @@ namespace eMonthleys
             //    connector = " AND ";
             //}
 
+            //ToDo: Atikur Rahman Sabuj: This is the initial code comment this if using improved code
+            List<Search> CustomerVehicles = new List<Search>();
+            CustomerVehicles = Search.GetAllSearch(wp);
+            Session["SearchResults"] = CustomerVehicles;
 
-            //List<Search> CustomerVehicles = new List<Search>();
-            //CustomerVehicles = Search.GetAllSearch(wp);
-            //Session["SearchResults"] = CustomerVehicles;
 
-            List<iSearch> customerVehicles = new List<iSearch>();
-            customerVehicles = SearchBase.Instance.SelectAll(wp);
-            Session["SearchResults"] = customerVehicles;
+            //ToDo: Atikur Rahman Sabuj: Use this code to improve website speed this code doesn't process the search result all at once
+            //List<iSearch> customerVehicles = new List<iSearch>();
+            //customerVehicles = SearchBase.Instance.SelectAll(wp);
+            //Session["SearchResults"] = customerVehicles;
 
 
             Response.Redirect("~/SearchResults.aspx");
