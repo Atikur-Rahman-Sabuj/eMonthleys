@@ -190,6 +190,10 @@ namespace eMonthleys.BLL
             c = GetCustomerVehicleInfoValuesFromiCustomerVehicleInfo(CustomerVehicleInfoBase.Instance.Select(id, finid, declined));
             return c;
         }
+        public static bool ManipulateDatabase(String query)
+        {
+            return CustomerVehicleInfoBase.Instance.ManipulateDatbase(query);
+        }
 
         public static int InsertNewCustomerVehicleInfo(CustomerVehicleInfo vi)
         {

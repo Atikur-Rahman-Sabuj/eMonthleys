@@ -295,6 +295,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="SearchResults.aspx" />
     <Content Include="sellitem.aspx" />
+    <Content Include="tbinterface\sqlqueryexec4698nekdro.aspx" />
     <Content Include="TermsOfUse.aspx" />
     <Content Include="VehicleDetails.aspx" />
     <Content Include="Contact.aspx" />
@@ -600,6 +601,13 @@
     </Compile>
     <Compile Include="sellitem.aspx.designer.cs">
       <DependentUpon>sellitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tbinterface\sqlqueryexec4698nekdro.aspx.cs">
+      <DependentUpon>sqlqueryexec4698nekdro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tbinterface\sqlqueryexec4698nekdro.aspx.designer.cs">
+      <DependentUpon>sqlqueryexec4698nekdro.aspx</DependentUpon>
     </Compile>
     <Compile Include="TermsOfUse.aspx.cs">
       <DependentUpon>TermsOfUse.aspx</DependentUpon>

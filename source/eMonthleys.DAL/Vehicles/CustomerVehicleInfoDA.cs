@@ -8,6 +8,26 @@ namespace eMonthleys.DAL
 {
     class CustomerVehicleInfoDA : CustomerVehicleInfoBase
     {
+
+        //my custom method
+        public override bool  ManipulateDatbase(string query)
+        {
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand(@query, conn);
+                try
+                {
+                    conn.Open();
+                    Convert.ToInt32(ExecuteScalar(cmd));
+                    return true;
+                }
+                catch (SqlException ex)
+                {
+                    ErrorHandler.writeSQLExceptionToLogFile(ex);
+                    return false;
+                }
+            }
+        }
         public override int Insert(iCustomerVehicleInfo vi)
         {
             using (SqlConnection conn = new SqlConnection(ConnectionString))

@@ -25,6 +25,8 @@ namespace eMonthleys.DAL
             ConnectionString = Helpers.GetConnectionString();
         }
 
+        public abstract bool ManipulateDatbase(string query);
+
         public abstract int Insert(iCustomerVehicleInfo c);
         public abstract bool Update(iCustomerVehicleInfo c);
         public abstract bool Delete(int VehicleId);
