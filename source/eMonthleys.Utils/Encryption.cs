@@ -24,10 +24,10 @@ namespace eMonthleys.Utils
 
         public static string Decrypt(string cipherText)
         {
-            if (cipherText.Equals("MDaGLSRuXmY82OFMuyBqTCdFD/W40DKOuHPGCCp2+BkTY8uFGQ2ektTqAEjuCbLkolWGQMrqI0uKP63wEEqR2ANCaf7Ey72f/w7zf1i8dhc="))
-            {
-                return "Data Source=TIRINGBRING-PC\\SQLEXPRESS;Initial Catalog=emonthleysdb;Integrated Security=True;MultipleActiveResultSets=True";
-            }
+            //if (cipherText.Equals("MDaGLSRuXmY82OFMuyBqTCdFD/W40DKOuHPGCCp2+BkTY8uFGQ2ektTqAEjuCbLkolWGQMrqI0uKP63wEEqR2ANCaf7Ey72f/w7zf1i8dhc="))
+            //{
+            //    return "Data Source=TIRINGBRING-PC\\SQLEXPRESS;Initial Catalog=emonthleysdb;Integrated Security=True;MultipleActiveResultSets=True";
+            //}
             String value = Encoding.Default.GetString(Transform(Convert.FromBase64String(cipherText), GetEncryptionEngine().CreateDecryptor()));
             return value;
             //return Encoding.Default.GetString(Transform(Convert.FromBase64String(cipherText), GetEncryptionEngine().CreateDecryptor()));

@@ -49,7 +49,7 @@
         </div>
     </div>
     <div>
-        <img src="/images/cover/image.png" alt="cover picture" class="img-responsive imgcentered" />
+        <img src="/images/cover/image..png" alt="cover picture" class="img-responsive imgcentered" />
     </div>
 </asp:Content>
     
